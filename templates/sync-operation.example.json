@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "operation_id": null,
+  "run_id": null,
+  "record_id": null,
+  "changes": [],
+  "source_evidence": [],
+  "destinations": [],
+  "destination_entry_fields": [
+    "target",
+    "expected_revision",
+    "status",
+    "write_result",
+    "readback_fields",
+    "readback_at",
+    "conflict",
+    "pending_action"
+  ],
+  "note": "Create a per-destination entry for actual work. Never pre-populate successful verification."
+}

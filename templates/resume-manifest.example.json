@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "resumes": [],
+  "entry_fields": [
+    "id",
+    "category",
+    "version",
+    "source_reference",
+    "pdf_reference",
+    "pdf_sha256",
+    "page_count",
+    "page_size",
+    "section_versions",
+    "role_review",
+    "cloud_readback",
+    "employer_attachment_readback"
+  ],
+  "note": "Leave entries empty until an actual user resume has been read. Local save, cloud attachment and employer upload are separate observations."
+}

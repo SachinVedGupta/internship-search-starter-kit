@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": null,
+  "revision": 0,
+  "kind": null,
+  "title": null,
+  "organization": null,
+  "event_dates": {
+    "start": null,
+    "end": null
+  },
+  "reported_at": null,
+  "maturity": "unknown",
+  "context": null,
+  "personal_contribution": null,
+  "team_scope": null,
+  "implementation": null,
+  "decisions": [],
+  "debugging": [],
+  "results": [],
+  "metric_conditions": [],
+  "lessons": [],
+  "next_steps": [],
+  "facts": [],
+  "artifacts": [],
+  "conflicts": [],
+  "history": []
+}

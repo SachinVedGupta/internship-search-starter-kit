@@ -1,0 +1,17 @@
+# Keep user-specific work outside this template repository.
+private/
+state/
+config/
+resumes/
+applications/
+receipts/
+.env
+.env.*
+*.pdf
+*.docx
+*.png
+*.jpg
+*.jpeg
+*.log
+.DS_Store
+__pycache__/

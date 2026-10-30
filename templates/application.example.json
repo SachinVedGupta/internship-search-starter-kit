@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": null,
+  "revision": 0,
+  "employer": null,
+  "requisition_id": null,
+  "title": null,
+  "official_url": null,
+  "url_aliases": [],
+  "term": null,
+  "locations": [],
+  "eligibility": {
+    "status": "unknown",
+    "reasons": [],
+    "evidence": []
+  },
+  "availability": "unverified",
+  "stage": "Need Action",
+  "outcome": "active",
+  "priority": null,
+  "posted_date": null,
+  "found_on": null,
+  "verified_at": null,
+  "applied_date": null,
+  "submission_evidence": [],
+  "next_action": null,
+  "selected_resume_id": null,
+  "questions": [],
+  "manual_notes": [],
+  "history": []
+}

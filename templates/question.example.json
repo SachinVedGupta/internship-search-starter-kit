@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "id": null,
+  "application_id": null,
+  "prompt": null,
+  "required": null,
+  "choices": [],
+  "condition": null,
+  "source_url": null,
+  "read_at": null,
+  "coverage": "unknown",
+  "draft": null,
+  "grounding": [],
+  "missing_facts": [],
+  "user_edited": false,
+  "review": {
+    "status": "Draft",
+    "content_version": 0,
+    "approved_version": null
+  }
+}

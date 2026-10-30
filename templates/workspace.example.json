@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "owner": {
+    "name": null,
+    "timezone": null
+  },
+  "targets": {
+    "term": null,
+    "roles": [],
+    "countries": []
+  },
+  "destinations": {
+    "dashboard": {
+      "url": null,
+      "id": null,
+      "owner_account": null,
+      "capability": "unconfigured",
+      "last_verified_at": null,
+      "blocker": null
+    },
+    "profile_hub": {
+      "url": null,
+      "id": null,
+      "owner_account": null,
+      "capability": "unconfigured",
+      "last_verified_at": null,
+      "blocker": null
+    },
+    "resume_library": {
+      "url": null,
+      "id": null,
+      "owner_account": null,
+      "capability": "unconfigured",
+      "last_verified_at": null,
+      "blocker": null
+    },
+    "application_tracker_doc": {
+      "url": null,
+      "id": null,
+      "owner_account": null,
+      "capability": "unconfigured",
+      "last_verified_at": null,
+      "blocker": null
+    },
+    "comprehensive_profile_doc": {
+      "url": null,
+      "id": null,
+      "owner_account": null,
+      "capability": "unconfigured",
+      "last_verified_at": null,
+      "blocker": null
+    },
+    "writing_archive_doc": {
+      "url": null,
+      "id": null,
+      "owner_account": null,
+      "capability": "unconfigured",
+      "last_verified_at": null,
+      "blocker": null
+    }
+  },
+  "private_files": {
+    "profile": null,
+    "preferences": null,
+    "permissions": null,
+    "checkpoint": null,
+    "resume_manifest": null
+  },
+  "sync_mode": "agent_performed",
+  "optional_schedule": null
+}
