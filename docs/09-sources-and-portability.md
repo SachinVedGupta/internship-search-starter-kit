@@ -1,6 +1,6 @@
 # Sources and portability
 
-This kit generalizes a real internship operating workflow into new instructions and empty templates. It intentionally excludes the original user's biography, resumes, applications, private document IDs, dashboard data, account connections, employer permissions, custom browser extension and local preparation code. It is not a clone of their deployed system.
+This kit generalizes a real internship operating workflow into new instructions and empty templates. It intentionally excludes the original user's biography, resumes, applications, private document IDs, dashboard data, account connections, employer permissions, custom browser extension and local preparation code. It is not a clone of their deployed system. A new generic local dashboard implementation is included in dashboard/; it has no hosted login, cloud sync or employer integration.
 
 Official product documentation checked October 30, 2026:
 

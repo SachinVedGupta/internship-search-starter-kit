@@ -6,13 +6,18 @@ ROOT = Path(__file__).resolve().parents[1]
 def render():
     paths = [ROOT / "prompts/01-setup.md", ROOT / "PROJECT-INSTRUCTIONS.md"]
     paths += sorted((ROOT / "docs").glob("*.md"))
+    paths += [ROOT / "dashboard/README.md"]
     paths += sorted((ROOT / "templates").glob("*"))
     paths += [ROOT / "prompts/02-daily-commands.md", ROOT / "prompts/03-dashboard-build.md"]
     parts = ["# Internship Search — Complete ChatGPT Setup Pack\n\n"
              "Upload this file to your own project and paste the setup prompt below. "
              "This is a generic setup kit, not a configured deployment. All example records are blank. "
              "Keep personalized records private. The full prompt and guides are embedded here; "
-             "references to other kit files resolve to the corresponding sections below.\n"]
+             "references to guide/template files resolve to the sections below. Runnable dashboard source files "
+             "are in the repository dashboard/ directory and are not embedded in this document. "
+             "If you have only this pack, fetch the source repository or ask the user for its ZIP; "
+             "do not pretend the executable files are attached. "
+             "Source repository: https://github.com/SachinVedGupta/internship-search-starter-kit\n"]
     for path in paths:
         relative = path.relative_to(ROOT).as_posix()
         body = path.read_text()

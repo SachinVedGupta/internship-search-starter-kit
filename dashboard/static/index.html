@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Your local internship search workspace" />
+    <title>Internship Studio</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="#home"
+        ><span class="brand-icon">↗</span> Internship Studio</a
+      >
+      <p class="eyebrow">YOUR NEXT CHAPTER</p>
+      <nav aria-label="Main navigation">
+        <button data-view="home">◈ <span>Overview</span></button
+        ><button data-view="applications">▦ <span>Applications</span></button
+        ><button data-view="profile">◎ <span>My profile</span></button
+        ><button data-view="resumes">▤ <span>Resume library</span></button
+        ><button data-view="writing">✎ <span>Answer studio</span></button
+        ><button data-view="sync">⇄ <span>Sync checklist</span></button
+        ><button data-view="settings">⚙ <span>Workspace</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <span class="local-dot"></span> Local workspace
+        <p>Saved on this computer.<br />No cloud sync connected.</p>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow" id="kicker">A LITTLE PROGRESS, EVERY DAY</p>
+          <h1 id="page-title">Your search, in focus.</h1>
+          <p id="page-subtitle">
+            Make room for the opportunities that fit you.
+          </p>
+        </div>
+        <div class="header-actions">
+          <button id="refresh" class="quiet">Refresh</button
+          ><button id="add" class="primary">+ Add application</button>
+        </div>
+      </header>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <section id="content" aria-label="Workspace content"></section>
+      <footer>
+        Built around your story. You review and submit every application.
+      </footer>
+    </main>
+    <dialog id="editor">
+      <form id="record-form">
+        <div class="dialog-heading">
+          <div>
+            <p class="eyebrow">YOUR WORKSPACE</p>
+            <h2 id="editor-title">New record</h2>
+          </div>
+          <button
+            type="button"
+            id="close-editor"
+            class="icon-button"
+            aria-label="Close editor"
+          >
+            ×
+          </button>
+        </div>
+        <div id="fields"></div>
+        <div id="editor-error" role="alert"></div>
+        <div class="dialog-actions">
+          <button type="button" id="show-history" class="quiet">
+            Version history</button
+          ><button type="button" id="cancel-editor" class="quiet">Cancel</button
+          ><button class="primary" type="submit">Save record</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="history-dialog">
+      <div class="dialog-heading">
+        <h2>Version history</h2>
+        <button
+          id="close-history"
+          class="icon-button"
+          aria-label="Close history"
+        >
+          ×
+        </button>
+      </div>
+      <div id="history-content"></div>
+    </dialog>
+    <input
+      id="restore-file"
+      type="file"
+      accept="application/json,.json"
+      hidden
+    />
+  </body>
+</html>

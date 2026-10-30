@@ -1,6 +1,6 @@
 # Private dashboard build brief
 
-This is an implementation brief, not an included application. Ask the assistant to build it in the user's account with available website tools, or use it in local Codex with an approved hosting choice. Follow the actual platform's skill and authentication documentation. Do not assume the original author's backend or private API exists.
+A working local starter is now included in `dashboard/`; read `docs/10-dashboard-code.md` and its README first and reuse it. This document describes the fuller private hosted system, including account-specific features not implemented in the local starter. Ask the assistant to adapt the included code in the user's account with available website tools, or use local Codex with an approved hosting choice. Follow the actual platform's skill and authentication documentation. Do not assume the original author's backend or private API exists.
 
 ## Product
 

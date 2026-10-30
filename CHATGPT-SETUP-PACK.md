@@ -1,6 +1,6 @@
 # Internship Search — Complete ChatGPT Setup Pack
 
-Upload this file to your own project and paste the setup prompt below. This is a generic setup kit, not a configured deployment. All example records are blank. Keep personalized records private. The full prompt and guides are embedded here; references to other kit files resolve to the corresponding sections below.
+Upload this file to your own project and paste the setup prompt below. This is a generic setup kit, not a configured deployment. All example records are blank. Keep personalized records private. The full prompt and guides are embedded here; references to guide/template files resolve to the sections below. Runnable dashboard source files are in the repository dashboard/ directory and are not embedded in this document. If you have only this pack, fetch the source repository or ask the user for its ZIP; do not pretend the executable files are attached. Source repository: https://github.com/SachinVedGupta/internship-search-starter-kit
 
 
 ---
@@ -17,7 +17,7 @@ Then do the setup, not just a plan:
 1. Inventory the capabilities actually available in this chat/account: files, web research, Google Drive reads and writes, Sites or another private dashboard option, browser control, local execution, email/calendar and scheduling. Mark each Verified, Available but untested, Unavailable or Awaiting my action. Read product-specific instructions where available. Ask only for the connections or decisions necessary for the next step; continue independent setup while waiting.
 2. Agree on my operating preferences and record permissions once with exact scope. This request authorizes creating private search documents and drafting my profile from information I provide; it does not authorize sending my information to employers. Before creating a resource, check whether I already have a suitable one. Never change sharing settings or publish personal data without my explicit request.
 3. Create or reuse three private Google Docs: Application Tracker (Home, Applied, To Apply), Comprehensive Career Profile, and Career Writing Archive. Use native tabs if supported; otherwise preserve these as clearly labelled sections. If Docs writes are unavailable, prepare downloadable equivalents and record cloud sync as pending.
-4. Build a private persisted dashboard in my account following the kit's dashboard specification when supported. Include applications, profile, resume library, answer review and sync status. Verify access control before adding personal data. If no private hosting is available, use a private document tracker now and leave the dashboard as a specific pending step. Do not claim a working dashboard from screenshots or mockups.
+4. Reuse the included runnable dashboard code in dashboard/; read dashboard/README.md and docs/10-dashboard-code.md. If local execution is available, launch and verify it instead of rebuilding the screens. For private online hosting, adapt those screens and data rules to an owner-authenticated persistent backend in my account following the dashboard specification. Do not expose the local-only Python server publicly. Include applications, profile, resume library, answer review and sync status. Verify access control before adding personal data. If private hosting is unavailable, the local dashboard can remain usable where local execution is supported; otherwise use a private document tracker and leave dashboard launch/hosting as specific pending steps. Do not claim a working dashboard from screenshots or mockups.
 5. Initialize my workspace registry, profile sources, search preferences, permissions, resume manifest, and sync checkpoint. Keep private data outside any public template repository. Give me the personalized PROJECT-INSTRUCTIONS.md text and tell me where to save it; save durable project instructions yourself only if a supported tool exists. Do not assume memory alone preserves the workflow.
 6. Establish the synchronization contract: application changes reach dashboard plus tracker; career updates reach profile hub plus comprehensive profile Doc; reusable answers/stories reach hub plus writing archive. Use targeted writes, preserve manual edits, verify each destination separately and keep unresolved operations pending.
 7. Inspect the actual resume I provide. Preserve facts and approved wording, keep source and PDF paired, verify layout/content and bind review to exact bytes where file tools exist. A chosen resume is not an employer upload.
@@ -176,7 +176,7 @@ Snapshots record the original read time, source and revision. Packet generation 
 
 # Private dashboard build brief
 
-This is an implementation brief, not an included application. Ask the assistant to build it in the user's account with available website tools, or use it in local Codex with an approved hosting choice. Follow the actual platform's skill and authentication documentation. Do not assume the original author's backend or private API exists.
+A working local starter is now included in `dashboard/`; read `docs/10-dashboard-code.md` and its README first and reuse it. This document describes the fuller private hosted system, including account-specific features not implemented in the local starter. Ask the assistant to adapt the included code in the user's account with available website tools, or use local Codex with an approved hosting choice. Follow the actual platform's skill and authentication documentation. Do not assume the original author's backend or private API exists.
 
 ## Product
 
@@ -312,7 +312,7 @@ Always end a blocked run with current state, successful work, pending operations
 Run supported checks in the user's account, using fictional test records where possible. A documented procedure in this repository is not evidence the user's workflow has passed it. Record timestamp, capability, actual destination, observation and limitations in the checkpoint.
 
 1. **Context:** a new project chat can read personalized instructions and the private registry, locate correct destinations and summarize goals without re-interviewing. If manual upload is needed, record it.
-2. **Privacy:** dashboard/data/file access works for the owner; signed-out access is denied. Test another account only if available. Verify API/object protection as well as page access. Do not load real private data before access checks pass.
+2. **Privacy:** for the included local starter, test its loopback, Host/Origin and session-token boundaries and label the result local-only; it has no hosted owner account. The following owner/signed-out checks remain pending until hosting exists. For a hosted dashboard, dashboard/data/file access works for the owner; signed-out access is denied. Test another account only if available. Verify API/object protection as well as page access. Do not load real private data before access checks pass.
 3. **Persistence:** create fictional application, reload, edit, reload and export; exact values survive. Remove only explicitly marked test records afterward, preserving audit history.
 4. **Identity:** two URL aliases for one requisition resolve correctly; distinct requisitions stay separate; full history/exclusions are considered.
 5. **Application sync:** make one authorized meaningful change in dashboard and tracker, then separately read back exact identity, stage, dates and next action. Verify manual notes survive. Do not introduce false submission state to test.
@@ -344,7 +344,7 @@ Call the document workflow usable if it passes its supported checks. Call full d
 
 # Sources and portability
 
-This kit generalizes a real internship operating workflow into new instructions and empty templates. It intentionally excludes the original user's biography, resumes, applications, private document IDs, dashboard data, account connections, employer permissions, custom browser extension and local preparation code. It is not a clone of their deployed system.
+This kit generalizes a real internship operating workflow into new instructions and empty templates. It intentionally excludes the original user's biography, resumes, applications, private document IDs, dashboard data, account connections, employer permissions, custom browser extension and local preparation code. It is not a clone of their deployed system. A new generic local dashboard implementation is included in dashboard/; it has no hosted login, cloud sync or employer integration.
 
 Official product documentation checked October 30, 2026:
 
@@ -358,6 +358,126 @@ Availability and controls vary by account, plan, operating system, organization 
 The profile evidence rules, small-batch discovery, dual-destination readbacks, resume version pairing, interview and acceptance procedures are workflow recommendations, not OpenAI product guarantees. This kit does not implement an always-on sync process or guarantee that an employer supports automation.
 
 Keep future personal customization in a separate private workspace. Do not use public issues or pull requests for private career content. Refresh official documentation and source reads when configuring the system; an updated timestamp alone is not verification.
+
+
+---
+
+# File: docs/10-dashboard-code.md
+
+# Start from the included dashboard code
+
+The repository now includes a working local dashboard in `dashboard/`. Read its README and use the existing code instead of rebuilding the core screens from scratch. This extends the original dashboard brief; it does not turn local code into a hosted service.
+
+## Recommended setup sequence
+
+1. Complete enough onboarding to understand the user's term, role preferences and existing tools.
+2. If local execution is supported, download the repository into a separate private working location, inspect `dashboard/README.md`, check Python availability and run `python3 dashboard/server.py`. Keep data outside the public checkout. Open the printed local URL. Start empty or use fictional examples in a separate test data directory.
+3. Verify actual save → reload → edit → reload → export and review history/conflict behavior. Record the user's local URL and data location privately. Use the app's actual field names; conceptual templates require mapping.
+4. Personalize preferences and authorized private records. Configure Google Docs using connected tools. Maintain the dual-destination sync contract; saving a Docs URL in Workspace does not connect it.
+5. If the user wants a private online dashboard and the account supports it, port/reuse these screens and data rules on a supported persistent host. Follow the platform's skills and access controls. The Python loopback server is local-only: do not expose it publicly or upload its database. Replace it with a suitable hosted backend and owner-authenticated, authorized reads/writes; private file storage needs its own implementation.
+6. Import the user's exported records through a validated migration, preserve versions/history and test access and readback separately. Do not label migration complete merely because the UI loads.
+
+## What code is already done
+
+Overview, searchable/filterable applications, application questions and grounded drafts, career notes, resume metadata/private links, reusable writing, manual sync checklist, preferences, SQLite persistence, retained versions, stale-edit conflicts, JSON backup/restore and Markdown export.
+
+## What remains account-specific
+
+Google Docs connections and actual cloud writes; online hosting/authentication; private PDF storage and inspection/compilation; official-posting research; employer form assistance; optional scheduling. No personal profile, credentials or standing permissions are bundled. A cloud-only chat may need the user to run the app locally, use an authorized connected computer or choose hosted setup.
+
+## Prompt to reuse the code
+
+“Read the included dashboard/README.md and docs/10-dashboard-code.md. Start from dashboard/ rather than rebuilding it. Launch and verify the local app if my environment supports it. Configure my preferences and private documents from onboarding, preserve my data outside the public checkout, and establish actual separate destination readbacks. If I want hosting, reuse the UI and data rules with a proper owner-authenticated persistent backend; do not expose the local Python server. Report which capabilities truly work and what still needs setup.”
+
+## Starter verification
+
+The kit maintainer ran 12 automated tests for persistence/history, stale edits, evidence rules, exact duplicate records, review invalidation, partial sync states, JSON restore, invalid input and local HTTP boundaries. Browser checks with fictional data covered application/question creation, reload, search, edit/history, profile notes, resume metadata, generic answer saving and a pending sync record. This is starter verification, not proof of any new user account, cloud connection or hosted deployment.
+
+
+---
+
+# File: dashboard/README.md
+
+# Internship Studio — runnable local dashboard
+
+A working starter, not just a design brief. It runs locally with Python 3.9+ and its standard library (including SQLite). There are no package installs, API keys or paid services required for this local app.
+
+From the repository root:
+
+```sh
+python3 dashboard/server.py
+```
+
+On Windows with the Python launcher:
+
+```bat
+py -3 dashboard/server.py
+```
+
+Open **http://127.0.0.1:8765**. Keep the terminal running; press Ctrl+C to stop. Use the printed `127.0.0.1` URL rather than `localhost`. If Python is missing, install a supported Python 3 version from [python.org](https://www.python.org/downloads/); your assistant can walk you through it. You can also use `Start Dashboard.command` on macOS or `Start Dashboard.bat` on Windows.
+
+## Included
+
+- Overview with priorities, counts and next actions.
+- Applications with employer/requisition/official URL, term/location, stage versus availability, source and submission evidence, search/filter/sort, archive and next action.
+- Application questions with prompts, drafts, grounding, conditions and review status.
+- Career profile entries with personal contribution, maturity, sources and notes.
+- Resume library with private PDF/source links, exact-version/hash metadata and review notes.
+- Answer studio for reusable answers/stories and review.
+- Manual sync checklist with separate records for each destination and evidence for readback.
+- Workspace preferences and destination links.
+- Persistent SQLite storage, revision conflict checks, retained history, Markdown export and JSON backup/restore.
+
+Starts empty. The optional Overview demo button creates three explicitly fictional examples. It never discovers real roles or imports anyone's profile. Archive examples before real use, or try them with a separate data directory.
+
+## Data stays outside the public checkout
+
+The default data directory is `~/.internship-search-workspace`, containing `workspace.sqlite3`. This is local persistence, not browser localStorage. Closing the browser/server does not delete it. Files linked from resume records stay in their original private storage; this starter stores references, not PDF bytes.
+
+For a separate test workspace or different port:
+
+```sh
+python3 dashboard/server.py --port 8766 --data-dir /absolute/path/to/private/test-workspace
+```
+
+Choose a private directory **outside** this public repository. Do not commit database files, backups, profiles or resumes. Exports contain private career information. JSON backup contains records plus history; restore only accepts an empty workspace and never overwrites existing records. Linked PDFs/source files need their own backups. Restore currently accepts backups up to 8 MB; for a larger workspace, preserve the database and plan a migration with your assistant.
+
+## What still needs setup
+
+This starter has **no Google Docs credentials, automatic sync, browser autofill, employer integration, PDF compiler, file upload storage, hosted account system or scheduler**. The sync checklist records actual work performed through the user's connected tools; it does not execute writes. Review/verification labels are user-entered assertions with evidence, not automated document inspection.
+
+Use the onboarding pack to connect your own accounts. An assistant with authorized browser access can edit the local UI. It can also use the local API below from the same computer when authorized; it must read and reconcile current records and verify each cloud destination independently. A cloud-only ChatGPT session cannot automatically access this computer's loopback app.
+
+## Local access boundary
+
+The server binds only to `127.0.0.1`, validates Host/Origin, denies cross-site requests, requires a per-run token for data routes and serves only three allowlisted static files. Local session tokens are available to the browser on this computer; they are not an account/login system. Other processes or users with access to your OS account can access local data. Use an appropriately private device/account.
+
+**Do not expose this server through a public tunnel, reverse proxy or network bind.** Python's [HTTP server documentation](https://docs.python.org/3/library/http.server.html) does not recommend it for production. For a private online dashboard, reuse these screens/data rules in an appropriate hosted backend with owner authentication and per-record/file authorization. Follow [the hosting handoff](../docs/10-dashboard-code.md) and test access before adding personal data. Do not host the static files alone and call it the complete app.
+
+## Local API for authorized assistants
+
+No CORS access is provided. Requests must target the exact printed Host. Do not place the session token in files, logs, source control or shared packets.
+
+1. `GET /api/session` returns the per-run `token` in memory.
+2. Include `X-Workspace-Token` in subsequent API requests. POST bodies use `Content-Type: application/json`.
+3. `GET /api/state` returns all records: `{kind,id,revision,updated_at,data}`. Collections are `applications`, `profile`, `resumes`, `writing`, `sync`, `settings`.
+4. `POST /api/save` accepts `{kind,id,expected_revision,data}`. Use a UUID for new IDs and revision `0`; existing records require the current revision. HTTP 409 means refresh/reconcile, not force overwrite. The server validates submission evidence, exact duplicate identities and review invalidation. Read `/api/state` back after saving.
+5. `GET /api/history/{kind}/{id}` returns previous saved versions, newest first.
+6. `GET /api/export` and `GET /api/export.md` export complete JSON history or readable current records.
+7. `POST /api/restore` restores a dashboard JSON export only into an empty database. This is not a general template-import endpoint.
+
+The blank templates elsewhere in this kit are conceptual records; the runnable UI's concrete fields are defined by `static/app.js` and validated by `server.py` (for example `company`/`url` rather than `employer`/`official_url`). Map fields explicitly and preserve unknown facts; do not post a template directly as a tested dashboard import.
+
+## Checks
+
+From the repository root:
+
+```sh
+python3 -m unittest discover -s dashboard/tests -v
+python3 scripts/check_kit.py
+```
+
+If Node is available, `node --check dashboard/static/app.js` checks JavaScript syntax. Node is not required to run the dashboard. The tests use temporary fictional workspaces and cover persistence/history, stale edits, submission evidence, duplicate identity, review invalidation, independent sync states, backup/restore, invalid input and local request boundaries. They do not verify hosted authentication, Google Docs or employer compatibility.
 
 
 ---
@@ -787,4 +907,4 @@ Use these inside your configured project. Scope is intentional; no command autho
 
 # File: prompts/03-dashboard-build.md
 
-Build my private internship dashboard using docs/04-dashboard-spec.md and the schemas/sync contract in docs/03-data-and-sync.md. Read my private workspace registry for existing destinations and do not duplicate them. Use the site's supported skills/tools and persistent storage. Prove owner-only access before adding my personal data. Build and test with fictional records first, then import authorized data. Implement applications, profile, resumes, answer review, sync status, version/history preservation and export. Do not claim Google Docs sync unless actual writes and separate readbacks work; default to agent-performed sync. Preserve my current Docs and decisions. If hosting requires a new account, payment or public access, finish the local build/preview and bring me the concrete remaining choice. Give me actual working URLs and acceptance evidence, or a precise blocked handoff.
+Start from the runnable code in dashboard/, reading dashboard/README.md and docs/10-dashboard-code.md before changing anything. Configure my private internship dashboard using docs/04-dashboard-spec.md and the schemas/sync contract in docs/03-data-and-sync.md. Read my private workspace registry for existing destinations and do not duplicate them. Use the site's supported skills/tools and persistent storage. Prove owner-only access before adding my personal data. Build and test with fictional records first, then import authorized data. Implement applications, profile, resumes, answer review, sync status, version/history preservation and export. Do not claim Google Docs sync unless actual writes and separate readbacks work; default to agent-performed sync. Preserve my current Docs and decisions. If hosting requires a new account, payment or public access, finish the local build/preview and bring me the concrete remaining choice. Give me actual working URLs and acceptance evidence, or a precise blocked handoff.

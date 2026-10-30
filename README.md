@@ -4,7 +4,11 @@ A reusable setup kit for an AI-assisted internship search: onboarding, a sourced
 
 **Start here:** download [CHATGPT-SETUP-PACK.md](CHATGPT-SETUP-PACK.md), create your own ChatGPT project, upload that file, and paste [the setup prompt](prompts/01-setup.md). The pack contains all the instructions and templates; no coding is required to start the interview.
 
-This repository contains instructions and blank templates. It is **not a deployed dashboard, browser extension, sync server, or preconnected account**. Your assistant builds/configures your private workspace in your account and proves which capabilities work. No personal career data or permissions transfer from the kit's author.
+This repository includes **runnable dashboard code** in [dashboard/](dashboard/README.md), alongside instructions and blank templates. It is **not a deployed online dashboard, browser extension, cloud sync server, or preconnected account**. Your assistant builds/configures your private workspace in your account and proves which capabilities work. No personal career data or permissions transfer from the kit's author.
+
+## Run the included dashboard
+
+With Python 3.9+ installed, run `python3 dashboard/server.py` from this repository and open **http://127.0.0.1:8765**. On Windows use `py -3 dashboard/server.py`. No package installs or API keys are required. Data persists outside the checkout. Read [dashboard/README.md](dashboard/README.md) for launchers, data location, backup and local-only boundaries. Your ChatGPT can start from this code instead of rebuilding the screens.
 
 ## Recommended path
 
@@ -12,7 +16,7 @@ This repository contains instructions and blank templates. It is **not a deploye
 2. Create a project named `Internship Search — My Career`. Upload the setup pack. Paste `prompts/01-setup.md` into a chat in that project.
 3. Answer the interview in small batches. Add your resume and any relevant profile/project materials privately.
 4. Connect your own Google Drive. Add Gmail, calendar, GitHub and browser capabilities only as useful. Complete sign-in yourself.
-5. Have the assistant create your private profile, tracker and writing archive, then a private dashboard using `docs/04-dashboard-spec.md` if supported. Record each actual destination in your private workspace registry.
+5. Have the assistant create your private profile, tracker and writing archive, then launch the included local dashboard or adapt it for private hosting using `docs/10-dashboard-code.md` and `docs/04-dashboard-spec.md`. Record each actual destination in your private workspace registry.
 6. Run `docs/08-acceptance-checks.md`. Begin with three official job postings and one reviewed application draft.
 7. Use `prompts/02-daily-commands.md` for ongoing work. Turn on a recurring check only after choosing its scope and time zone.
 
@@ -28,7 +32,9 @@ If a connection is unavailable, start with documents and drafts. Keep unavailabl
 | `docs/01-onboarding.md` | Interview and profile evidence rules |
 | `docs/02-connections.md` | Account connections and capability tests |
 | `docs/03-data-and-sync.md` | Records, identity, conflict handling and dual-write contract |
-| `docs/04-dashboard-spec.md` | Build brief for a private working dashboard |
+| `dashboard/` | Working local dashboard with persistent records, history and export |
+| `docs/04-dashboard-spec.md` | Requirements for the full private hosted dashboard |
+| `docs/10-dashboard-code.md` | Reuse the included code and configure hosting/integrations |
 | `docs/05-application-workflow.md` | Discovery, drafting and authorized form entry |
 | `docs/06-resumes-and-profile.md` | Resume library and ongoing profile intake |
 | `docs/07-routines-and-recovery.md` | Daily use, optional schedules and recovery |
