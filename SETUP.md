@@ -1,0 +1,31 @@
+# Set up my internship-search system
+
+This is the canonical setup request for an agent. When the user asks you to follow this file, carry out the instructions below using their own account and information. Read the relevant linked guides and source code as needed.
+
+Set up my own complete internship-search workspace using this repository:
+
+https://github.com/SachinVedGupta/internship-search-starter-kit
+
+Read [README.md](README.md), [CHATGPT-SETUP-PACK.md](CHATGPT-SETUP-PACK.md), [the detailed setup guide](prompts/01-setup.md), [dashboard/README.md](dashboard/README.md) and [the dashboard handoff](docs/10-dashboard-code.md). Follow the relevant operating guides and acceptance checks. If you can download or clone the repository, do so into my own private working location. If you cannot access the files, tell me exactly which setup file or repository ZIP to upload; do not invent its contents.
+
+I want you to carry out the setup, not just describe it. My goal is a system that understands my background, finds suitable internships, maintains an application dashboard and Google Docs tracker, keeps a detailed career profile and resume library, prepares strong truthful answers, and helps fill employer applications when I authorize it. I personally review and submit applications.
+
+Start by checking the tools actually available to you and interviewing me in batches of 5–7 relevant questions. Ask about my target term and roles, education/graduation, locations and work eligibility, availability, experience/projects, existing resumes and applications, priorities, device and connected accounts. Read my supplied materials so I do not have to repeat them. Adapt follow-up questions to what you learn. Save supported facts with sources, distinguish my reports from independently checked facts, and keep unknowns explicit. Never copy the kit author's biography or permissions.
+
+Then complete these steps:
+
+1. Create or reuse a private workspace registry, sourced career profile, search preferences, scoped permissions, resume manifest and checkpoint. Keep my personal records, documents, resumes and database outside the public template repository. Preserve existing work and edits.
+2. Reuse the runnable code in dashboard/ rather than rebuilding the screens. If you have local execution, run its tests, launch it and verify save → reload → edit → export with fictional test data in a separate test workspace. Then start my real workspace empty. Explain how I reopen it. If local execution is unavailable, help me run it or identify the precise missing capability; continue independent setup.
+3. Ask whether I want a private online dashboard after explaining the local option. If supported and chosen, reuse the UI/data rules with a proper owner-authenticated persistent backend. Do not expose the local Python server publicly. Verify owner access and signed-out denial before adding personal data. Bring me any concrete hosting cost or account decision before committing to it.
+4. Help connect my own Google Drive and create or reuse three private Google Docs: Application Tracker with Home, Applied and To Apply tabs/sections; Comprehensive Career Profile; and Career Writing Archive. Configure actual destination links. I will handle sign-in and account permission screens. If writes are unavailable, prepare private downloadable equivalents and record cloud setup as pending.
+5. Establish real synchronization during your work: application changes reach dashboard plus tracker; career updates reach profile plus career Doc; reusable answers/stories reach the hub plus writing archive. Use targeted updates, preserve manual edits, read back each destination separately and checkpoint partial failures. Saving a URL or local record does not prove cloud sync.
+6. Inspect my actual resume, preserve truthful facts and approved wording, and configure useful presets from my experience. Keep editable source and PDF versions paired; verify actual content/layout and exact file identity where supported. Do not mark uninspected files reviewed or uploaded.
+7. Find an initial batch of three real official postings matching my goals and eligibility. Check exact requisitions, term, location, deadlines, availability, application history and duplicates. Rank them, explain important unknowns, and save verified changes to both trackers.
+8. Prepare one suitable application draft using observed prompts where accessible. Draft every supportable answer in my voice, record grounding and access/conditional gaps, propose the appropriate resume, and leave generated answers needing my review. Do not invent experience, metrics, referrals, demographics, eligibility or consent.
+9. Give me personalized persistent project instructions and run the kit's acceptance checks. Report actual working links, tested features, per-destination readbacks, exact pending steps and my next three actions. Do not call partial setup complete or promise background operation without a tested service. Make a new chat able to resume from the registry and checkpoint.
+
+This request authorizes creating my private setup and internal drafts from information I provide. It does not authorize employer transmission, file uploads, signatures, consent, account creation, assessments, messages or final submission. Record any later permissions by exact scope and reuse applicable authorizations without repeatedly asking. For later authorized form entry, verify populated fields, preserve my edits, complete accessible intermediate pages through Review and stop before any finalizing control.
+
+Do not create recurring tasks yet. Once the manual workflow works, ask whether I want them and establish cadence, time zone, scope and notifications. Be concise, make reasonable reversible implementation choices, and continue independent authorized work while waiting for a connection or answer.
+
+Begin with a short capability inventory and the first onboarding questions. Keep progressing through setup as I answer.

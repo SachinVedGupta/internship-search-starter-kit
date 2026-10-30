@@ -5,13 +5,17 @@ Upload this file to your own project and paste the setup prompt below. This is a
 
 ---
 
-# File: prompts/00-start-here.md
+# File: SETUP.md
+
+# Set up my internship-search system
+
+This is the canonical setup request for an agent. When the user asks you to follow this file, carry out the instructions below using their own account and information. Read the relevant linked guides and source code as needed.
 
 Set up my own complete internship-search workspace using this repository:
 
 https://github.com/SachinVedGupta/internship-search-starter-kit
 
-Read the actual README.md, CHATGPT-SETUP-PACK.md, prompts/01-setup.md, dashboard/README.md and docs/10-dashboard-code.md. Follow the relevant operating guides and acceptance checks. If you can download or clone the repository, do so into my own private working location. If you cannot access the files, tell me exactly which setup file or repository ZIP to upload; do not invent its contents.
+Read [README.md](README.md), [CHATGPT-SETUP-PACK.md](CHATGPT-SETUP-PACK.md), [the detailed setup guide](prompts/01-setup.md), [dashboard/README.md](dashboard/README.md) and [the dashboard handoff](docs/10-dashboard-code.md). Follow the relevant operating guides and acceptance checks. If you can download or clone the repository, do so into my own private working location. If you cannot access the files, tell me exactly which setup file or repository ZIP to upload; do not invent its contents.
 
 I want you to carry out the setup, not just describe it. My goal is a system that understands my background, finds suitable internships, maintains an application dashboard and Google Docs tracker, keeps a detailed career profile and resume library, prepares strong truthful answers, and helps fill employer applications when I authorize it. I personally review and submit applications.
 
@@ -34,6 +38,17 @@ This request authorizes creating my private setup and internal drafts from infor
 Do not create recurring tasks yet. Once the manual workflow works, ask whether I want them and establish cadence, time zone, scope and notifications. Be concise, make reasonable reversible implementation choices, and continue independent authorized work while waiting for a connection or answer.
 
 Begin with a short capability inventory and the first onboarding questions. Keep progressing through setup as I answer.
+
+
+---
+
+# File: prompts/00-start-here.md
+
+Set up my internship-search and application system by reading and following this file:
+
+https://github.com/SachinVedGupta/internship-search-starter-kit/blob/main/SETUP.md
+
+Interview me, use the included dashboard code, configure my own profile and trackers, and verify what actually works. Carry out the setup rather than only giving me a plan. I will connect my accounts and personally review and submit applications.
 
 
 ---
