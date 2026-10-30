@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 def render():
-    paths = [ROOT / "prompts/01-setup.md", ROOT / "PROJECT-INSTRUCTIONS.md"]
+    paths = [ROOT / "prompts/00-start-here.md", ROOT / "prompts/01-setup.md", ROOT / "PROJECT-INSTRUCTIONS.md"]
     paths += sorted((ROOT / "docs").glob("*.md"))
     paths += [ROOT / "dashboard/README.md"]
     paths += sorted((ROOT / "templates").glob("*"))

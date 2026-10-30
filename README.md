@@ -2,7 +2,7 @@
 
 A reusable setup kit for an AI-assisted internship search: onboarding, a sourced career profile, a private applications dashboard, Google Docs tracking, resume management, grounded application drafts, and optional supervised browser entry.
 
-**Start here:** download [CHATGPT-SETUP-PACK.md](CHATGPT-SETUP-PACK.md), create your own ChatGPT project, upload that file, and paste [the setup prompt](prompts/01-setup.md). The pack contains all the instructions and templates; no coding is required to start the interview.
+**Start here:** create your own ChatGPT project and paste [this single self-contained prompt](prompts/00-start-here.md). It includes the repository link and tells your agent to read the files and carry out onboarding/setup. If your agent cannot access the repository, download and upload [CHATGPT-SETUP-PACK.md](CHATGPT-SETUP-PACK.md); for runnable code, also provide the repository ZIP when needed. No coding is required to start the interview.
 
 This repository includes **runnable dashboard code** in [dashboard/](dashboard/README.md), alongside instructions and blank templates. It is **not a deployed online dashboard, browser extension, cloud sync server, or preconnected account**. Your assistant builds/configures your private workspace in your account and proves which capabilities work. No personal career data or permissions transfer from the kit's author.
 
@@ -13,7 +13,7 @@ With Python 3.9+ installed, run `python3 dashboard/server.py` from this reposito
 ## Recommended path
 
 1. Use your own ChatGPT account. Prefer desktop Work or Codex when available for multi-step setup and local/browser work. A normal chat can still interview you and prepare drafts.
-2. Create a project named `Internship Search — My Career`. Upload the setup pack. Paste `prompts/01-setup.md` into a chat in that project.
+2. Create a project named `Internship Search — My Career`. Paste `prompts/00-start-here.md` into a chat in that project. Upload the setup pack or repository ZIP if the agent cannot fetch the files.
 3. Answer the interview in small batches. Add your resume and any relevant profile/project materials privately.
 4. Connect your own Google Drive. Add Gmail, calendar, GitHub and browser capabilities only as useful. Complete sign-in yourself.
 5. Have the assistant create your private profile, tracker and writing archive, then launch the included local dashboard or adapt it for private hosting using `docs/10-dashboard-code.md` and `docs/04-dashboard-spec.md`. Record each actual destination in your private workspace registry.
@@ -28,7 +28,8 @@ If a connection is unavailable, start with documents and drafts. Keep unavailabl
 | --- | --- |
 | `CHATGPT-SETUP-PACK.md` | One-file upload containing the entire operating guide |
 | `PROJECT-INSTRUCTIONS.md` | Paste into your project's instructions after onboarding |
-| `prompts/01-setup.md` | Full onboarding and implementation prompt |
+| `prompts/00-start-here.md` | Single prompt to paste, including the repo URL and complete setup request |
+| `prompts/01-setup.md` | Detailed onboarding and implementation instructions |
 | `docs/01-onboarding.md` | Interview and profile evidence rules |
 | `docs/02-connections.md` | Account connections and capability tests |
 | `docs/03-data-and-sync.md` | Records, identity, conflict handling and dual-write contract |
